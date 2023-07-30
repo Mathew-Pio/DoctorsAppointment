@@ -1,0 +1,51 @@
+{
+  "name": "doctorsappointmentapp",
+  "version": "1.0.0",
+  "description": "doctor appointment booking system nodejs mySql",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/server.js"
+  },
+  "keywords": [
+    "doctor",
+    "appointment",
+    "booking",
+    "system",
+    "nodejs",
+    "mySql",
+    "elasticsearch",
+    "messenger",
+    "bot"
+  ],
+  "author": "Okononfua Mathew",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "connect-flash": "^0.1.1",
+    "connect-session-sequelize": "^7.1.7",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "mysql2": "^3.4.4",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.13",
+    "@types/express-session": "^1.17.7",
+    "@types/passport": "^1.0.12",
+    "@types/passport-local": "^1.0.35",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chokidar": "^3.5.3",
+    "nodemon": "^2.0.22"
+  }
+}
