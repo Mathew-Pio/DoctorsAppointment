@@ -17,7 +17,7 @@ let createNewUser = (user) => {
     //  hash the user's password
         let salt = bcrypt.genSaltSync(10);
     // update the user's password
-        user.password = await bcrypt.hashSync(user.password, salt);
+        user.password = bcrypt.hashSync(user.password, salt);
     // create a new user
         await db.User.create(user);
         resolve("done!")
