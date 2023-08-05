@@ -29,22 +29,25 @@ let createNewUser = (user) => {
 };
 
 let checkEmailUser = (userCheck) => {
-    return new Promise( async (resolve, reject) => {
-        try{
+    return new Promise(async (resolve, reject) => {
+        try {
             let currentUser = await db.User.findOne({
                 where: {
                     email: userCheck.email
                 }
             });
 
-            if(currentUser) resolve(true);
-            resolve(false);
+            if (currentUser) {
+                resolve(true);
+            } else {
+                resolve(false);
+            }
 
-        }catch(e){
+        } catch (e) {
             reject(e);
         }
     });
-}
+};
 
 module.exports = {
     createNewUser: createNewUser,
